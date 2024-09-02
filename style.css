@@ -77,7 +77,6 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/img/home.jpg');
     background-size: cover;
 }
 
@@ -482,6 +481,52 @@ span {
 
 .portifolio-column:nth-child(1) .portifolio-content .progresso:nth-child(4) .barra span {
     width: 27%;
+}
+
+.portifolio a {
+    font-size: 1.7rem;
+    color: var(--text-bg-color);
+    font-weight: 500;
+    transition: .3s;
+}
+
+.portifolio a:hover,
+.portifolio a:active {
+    color: var(--main-bg-color);
+}
+
+.portifolio-content .projetos {
+    padding: 1.5rem 0;
+}
+
+.portifolio-content .projetos p {
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.projetos-box .portifolio-content {
+    position: relative;
+    border: .2rem solid var(--main-bg-color);
+    border-radius: .6rem;
+    padding: 3.235rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.projetos-box .portifolio-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.projetos-box .portifolio-content:hover::before {
+    width: 100%;
 }
 
 /*Design da aba "Contatos"*/
